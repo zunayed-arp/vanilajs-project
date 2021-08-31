@@ -1,8 +1,8 @@
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=Dhaka,BD&APPID=7067467032ca1cdebb6937d70a4f9721`)
-	.then(res => res.json())
-	.then(data => {
-		console.log(data)
-	})
+// fetch(`https://api.openweathermap.org/data/2.5/weather?q=Dhaka,BD&APPID=7067467032ca1cdebb6937d70a4f9721`)
+// 	.then(res => res.json())
+// 	.then(data => {
+// 		console.log(data)
+// 	})
 
 
 
@@ -46,7 +46,7 @@ const showWeatherInformation=(data)=>{
 	skyDiv.innerHTML = `
 
 	<span class="capitalize">${data.weather[0].description}</span>
-		<span class="capitalize">, ${data.weather[1].description}</span>
+
 	`
 
 	const showDiv = document.getElementById('show-temp');
